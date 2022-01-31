@@ -1,0 +1,24 @@
+{
+  "name": "cgh-v14",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chinghytb/djs-v14-handler.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chinghytb/djs-v14-handler/issues"
+  },
+  "homepage": "https://github.com/chinghytb/djs-v14-handler#readme",
+  "dependencies": {
+    "discord.js": "^14.0.0-dev.1643544396.388f535",
+    "glob": "^7.2.0",
+    "util": "^0.12.4"
+  }
+}
