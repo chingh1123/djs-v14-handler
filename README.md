@@ -19,7 +19,7 @@ npm i glob
 
 ### For copy my whole code:
 Please do:
-```js
+```
 git clone https://github.com/chinghytb/djs-v14-handler
 ```
 
