@@ -17,6 +17,12 @@ npm i util
 npm i glob
 ```
 
+### For copy my whole code:
+Please do:
+```js
+git clone https://github.com/chinghytb/djs-v14-handler
+```
+
 # More info links:
 - https://deploy-preview-1011--discordjs-guide.netlify.app/additional-info/changes-in-v14.html#before-you-start
 - [discord.js github](https://github.com/discordjs)
