@@ -25,6 +25,7 @@ git clone https://github.com/chinghytb/djs-v14-handler
 
 # More info links:
 - https://deploy-preview-1011--discordjs-guide.netlify.app/additional-info/changes-in-v14.html#before-you-start
+- [discord.js docs (main)](https://discord.js.org/#/docs/discord.js/main/general/welcome)
 - [discord.js github](https://github.com/discordjs)
 - [discord.js offical server](https://discord.gg/djs)
 
