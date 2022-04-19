@@ -1,4 +1,4 @@
-const { ButtonComponent, ActionRow, EnumResolvers } = require('discord.js');
+const { ButtonBuilder, ActionRowBuilder, EnumResolvers } = require('discord.js');
 const enumValues = EnumResolvers.resolveButtonStyle('DANGER');
 // You also can do this enum values with other button style.
 
