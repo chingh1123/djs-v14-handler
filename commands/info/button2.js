@@ -7,8 +7,8 @@ module.exports = {
     description: 'descriptions here',
 
     run: async (client, message, args) => {
-        const button = new ActionRow().addComponents(
-            new ButtonComponent({
+        const button = new ActionRowBuilder().addComponents(
+            new ButtonBuilder({
                 label: 'test',
                 style: enumValues,
                 custom_id: '12345',
