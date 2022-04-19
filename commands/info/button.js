@@ -1,4 +1,4 @@
-const { ButtonStyle, ButtonComponent, ActionRow } = require('discord.js'); //add one more ButtonStyle
+const { ButtonStyle, ButtonBuilder, ActionRowBuilder } = require('discord.js'); //add one more ButtonStyle
 
 module.exports = {
     name: 'button',
