@@ -1,8 +1,9 @@
-const { CommandInteraction, EmbedBuilder } = require('discord.js');
+const { CommandInteraction, EmbedBuilder, ApplicationCommandType } = require('discord.js');
 
 module.exports = {
     name: 'embed',
     description: 'descriptions here',
+    type: ApplicationCommandType.ChatInput,
 
     run: async(client, interaction, args) => {
         const sendEmbedMsg = new EmbedBuilder()
