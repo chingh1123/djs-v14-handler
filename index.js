@@ -6,6 +6,7 @@ const client = new Client({
         GatewayIntentBits.GuildEmojisAndStickers,
         GatewayIntentBits.DirectMessages,
         GatewayIntentBits.GuildBans,
+        GatewayIntentBits.MessageContent,
         GatewayIntentBits.GuildInvites,
         GatewayIntentBits.GuildWebhooks,
         GatewayIntentBits.GuildMessages,
