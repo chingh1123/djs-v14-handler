@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/chinghytb/djs-v14-handler#readme",
   "dependencies": {
-    "discord.js": "^14.0.0-dev.1650240532-9ef7ffd",
+    "discord.js": "^14.0.1",
     "glob": "^7.2.0",
     "util": "^0.12.4"
   }
