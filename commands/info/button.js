@@ -1,4 +1,4 @@
-const { ButtonStyle, ButtonBuilder, ActionRowBuilder } = require('discord.js'); //add one more ButtonStyle
+const { ButtonStyle, ButtonBuilder, ActionRowBuilder } = require('discord.js');
 
 module.exports = {
     name: 'button',
@@ -16,10 +16,10 @@ module.exports = {
                 //ButtonStyle.Success = green
                 //ButtonStyle.Links = link button
               
-                custom_id: 'red', //customId become custom_id
+                custom_id: 'red',
             })
         )
 
-        message.channel.send({ content: "version 14 button", components: [button] })
+        message.channel.send({ content: "It's just button!", components: [button] })
     }
 }
