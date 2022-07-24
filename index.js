@@ -1,19 +1,19 @@
-const { Client, GatewayIntentBits, EnumResolvers, Collection } = require("discord.js");
+const { Client, GatewayIntentBits: gib, Collection } = require("discord.js");
 
 const client = new Client({
     intents: [
-        GatewayIntentBits.Guilds,
-        GatewayIntentBits.GuildEmojisAndStickers,
-        GatewayIntentBits.DirectMessages,
-        GatewayIntentBits.GuildBans,
-        GatewayIntentBits.MessageContent,
-        GatewayIntentBits.GuildInvites,
-        GatewayIntentBits.GuildWebhooks,
-        GatewayIntentBits.GuildMessages,
-        GatewayIntentBits.GuildMembers,
-        GatewayIntentBits.GuildIntegrations,
-        GatewayIntentBits.GuildVoiceStates,
-        GatewayIntentBits.GuildMessageReactions
+        gib.Guilds,
+        gib.GuildEmojisAndStickers,
+        gib.DirectMessages,
+        gib.GuildBans,
+        gib.MessageContent,
+        gib.GuildInvites,
+        gib.GuildWebhooks,
+        gib.GuildMessages,
+        gib.GuildMembers,
+        gib.GuildIntegrations,
+        gib.GuildVoiceStates,
+        gib.GuildMessageReactions
     ],
 });
 module.exports = client;
@@ -25,5 +25,10 @@ client.config = require("./config.json");
 
 // // Initializing the project
 require("./handler")(client);
+
+// message content testing
+client.on('messageCreate', message => {
+    if(message.content === 'hello') return message.channel.send({ content: 'hi!' });
+})
 
 client.login(client.config.token);
