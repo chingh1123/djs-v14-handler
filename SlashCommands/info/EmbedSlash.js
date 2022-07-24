@@ -1,20 +1,22 @@
-const { CommandInteraction, EmbedBuilder, ApplicationCommandType } = require('discord.js');
+const { EmbedBuilder } = require('discord.js');
 
 module.exports = {
     name: 'embed',
     description: 'descriptions here',
-    type: ApplicationCommandType.ChatInput,
 
-    run: async(client, interaction, args) => {
+    run: async(client, message, args) => {
         const sendEmbedMsg = new EmbedBuilder()
             .setTitle('nice')
             .setDescription('nice description')
-            .setColor([255, 0, 255])
-            .setAuthor({ name: 'author', iconURL: `${interaction.user.displayAvatarURL()}`})
-            .setFooter({ text: 'hi', iconURL: `${interaction.user.displayAvatarURL()}`})
+            .setAuthor({ name: 'author', iconURL: `${message.author.displayAvatarURL()}`})
+            .setFooter({ text: 'hi', iconURL: `${message.author.displayAvatarURL()}`})
             .setImage('https://yt3.ggpht.com/ytc/AKedOLQc1OCf9gztVmcVnmI_41uN9axrRP8wd4a-GflFRQ=s900-c-k-c0x00ffffff-no-rj')
+            .addFields([
+                { name: 'nice.one', value: 'nice.one' },
+                { name: 'nice.two', value: 'nice.two' },
+            ])
             .setTimestamp()
-            .setThumbnail(`${interaction.user.displayAvatarURL()}`)
-        interaction.followUp({ embeds: [sendEmbedMsg] })
+            .setThumbnail(`${message.author.displayAvatarURL()}`)
+        message.channel.send({ embeds: [sendEmbedMsg] })
     }
 }
