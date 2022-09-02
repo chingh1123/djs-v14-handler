@@ -1,5 +1,9 @@
 # Discord.js version 14 handler
 
+![license](https://img.shields.io/github/license/chingh1123/djs-v14-handler)
+![last commit](https://img.shields.io/github/last-commit/chingh1123/djs-v14-handler)
+[![discord.js version](https://img.shields.io/github/package-json/dependency-version/chingh1123/djs-v14-handler/discord.js)](https://discord.js.org)
+
 - For download and run the files↙️
 
 Please do:
