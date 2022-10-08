@@ -1,11 +1,11 @@
-const { Embed } = require('discord.js'); //'MessageEmbed' become 'Embed'
+const { EmbedBuilder } = require('discord.js'); //'v13: MessageEmbed' 'v14: EmbedBuilder'
 
 module.exports = {
     name: 'embed',
     description: 'descriptions here',
 
     run: async(client, message, args) => {
-        const sendEmbedMsg = new Embed()
+        const sendEmbedMsg = new EmbedBuilder()
             .setTitle('nice')
             .setDescription('nice description')
             .setAuthor({ name: 'author', iconURL: `${message.author.displayAvatarURL()}`})
