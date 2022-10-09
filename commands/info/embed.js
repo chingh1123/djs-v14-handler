@@ -1,4 +1,4 @@
-const { EmbedBuilder } = require('discord.js'); //'v13: MessageEmbed' 'v14: EmbedBuilder'
+const { EmbedBuilder } = require('discord.js');
 
 module.exports = {
     name: 'embed',
