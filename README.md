@@ -13,12 +13,9 @@ npm i discord.js@latest
 
 - And also, before install the djs version 14, **You must be update your [NodeJs](https://nodejs.org/en/download/current/) to version 16.9 or above.**
 
-### Another npm package that gonna download for this handler:
+### Another npm packages must be download for this handler:
 ```js
-npm i util
-```
-```js
-npm i glob
+npm i util glob
 ```
 
 ### For copy my whole code:
